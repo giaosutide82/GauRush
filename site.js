@@ -1,5 +1,5 @@
 // Add the public GitHub Releases asset URL here when the release goes live.
-const releaseUrl = "";
+const releaseUrl = "https://github.com/giaosutide82/GauRush/releases/download/v0.29.0/GauRush.Setup.0.29.0.exe";
 const installer = document.querySelector("#installer-link");
 if (releaseUrl) {
   installer.href = releaseUrl;
