@@ -1,1 +1,1 @@
-GauRush
+Official webpage for GauRush app
