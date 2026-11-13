@@ -20,15 +20,18 @@
     </div>
   </header>
   <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-heading">
-      <div class="hero-copy">
-        <div class="overline"><span class="live-dot"></span> DESKTOP TOOL / WINDOWS x64 <span class="overline-version">v0.30.0</span></div>
-        <h1 id="hero-heading">A clearer view of <span>every splat.</span></h1>
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/promo-poster.jpg" aria-hidden="true" tabindex="-1">
+        <source src="assets/promo.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy wrap">
+        <p class="hero-kicker">GAURUSH / GAUSSIAN SPLAT EDITOR</p>
+        <h1 id="hero-heading">A clearer view of<br><span>every splat.</span></h1>
         <p class="intro">Explore, clean, and animate Gaussian splat captures in one dedicated desktop workspace.</p>
         <div class="hero-actions"><a class="button primary" href="#download">Get GauRush <span aria-hidden="true">↗</span></a><a class="button subtle" href="#workspace">See it in action <span aria-hidden="true">↘</span></a></div>
-        <div class="hero-foot"><span class="tiny-line"></span> PLY · SPLAT · KSPLAT <span class="hero-foot-side">SINGLE FRAMES & SEQUENCES</span></div>
       </div>
-      <div class="hero-scene" aria-label="Generative Gaussian point cloud artwork"><div class="scene-top"><span>GAUSSIAN FIELD / LIVE STUDY</span><span class="scene-cross">+</span></div><canvas id="splat-art" aria-hidden="true"></canvas><div class="scene-bottom"><span>MOVE POINTER TO INTERACT</span><span>FIG. 001 — SPLAT STUDY</span></div></div>
+      <div class="hero-video-label" aria-hidden="true"><span>GAURUSH / VERSION 0.30.0</span><span>SCROLL TO EXPLORE ↓</span></div>
     </section>
     <div class="ribbon" aria-label="Main capabilities"><div class="wrap ribbon-inner"><span>VIEW</span><i></i><span>REFINE</span><i></i><span>ANIMATE</span><i></i><span>EXPORT</span><span class="ribbon-note">ONE SPACE FOR THE ENTIRE CAPTURE</span></div></div>
     <section class="workspace wrap" id="workspace" aria-labelledby="workspace-heading">
@@ -36,7 +39,7 @@
       <div class="workbench">
         <div class="workbench-main">
           <div class="video-chrome"><span><span class="chrome-dot"></span> GAURUSH WORKSPACE</span><span class="video-label">REAL APPLICATION FOOTAGE</span></div>
-          <video id="workspace-demo" src="assets/view.webm" poster="assets/view.jpg" controls muted loop playsinline preload="metadata" aria-label="GauRush sequence playback demo using a synthetic splat capture"></video>
+          <video id="workspace-demo" src="assets/view.mp4" poster="assets/view.jpg" controls muted loop playsinline preload="metadata" aria-label="GauRush sequence playback demo using a synthetic splat capture"></video>
           <div class="video-caption"><span id="video-counter">01 / 04</span><span>INTERACTIVE PRODUCT TOUR</span><span class="caption-live"><span></span> ORIGINAL CAPTURE</span></div>
         </div>
         <div class="workbench-side"><p class="sidebar-heading">EXPLORE THE WORKSPACE</p><div class="feature-picker" role="tablist" aria-label="Workspace features"><button id="view-tab" role="tab" aria-selected="true" aria-controls="workspace-panel"><span>01</span> View &amp; play <b aria-hidden="true">↗</b></button><button id="crop-tab" role="tab" aria-selected="false" aria-controls="workspace-panel" tabindex="-1"><span>02</span> Crop volumes <b aria-hidden="true">↗</b></button><button id="lasso-tab" role="tab" aria-selected="false" aria-controls="workspace-panel" tabindex="-1"><span>03</span> Lasso cleanup <b aria-hidden="true">↗</b></button><button id="animate-tab" role="tab" aria-selected="false" aria-controls="workspace-panel" tabindex="-1"><span>04</span> Animate <b aria-hidden="true">↗</b></button></div><div id="workspace-panel" role="tabpanel" tabindex="0" aria-labelledby="view-tab"><div class="panel-rule"></div><h3>Inspect every frame.</h3><p>Scrub the timeline and inspect a capture from different angles. Open PLY, SPLAT, and KSPLAT files or add multiple captures to a scene.</p></div></div>
